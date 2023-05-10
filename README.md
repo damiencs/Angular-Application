@@ -33,5 +33,5 @@ Selecting items
 The excel file is downloaded when you hit the export button.
 <img width="1336" alt="export" src="https://github.com/damiencs/Angular-Application/assets/75296154/1f501719-3b0c-4734-ab23-a901c7af1987">
 
-#### 3. Excel file
+#### 4. Excel file
 <img width="1439" alt="Excel" src="https://github.com/damiencs/Angular-Application/assets/75296154/fba229bd-62d5-47e7-bef2-6ccb534ce0ef">
