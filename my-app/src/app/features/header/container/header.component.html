@@ -1,0 +1,14 @@
+<p class = header>
+    <mat-toolbar color="primary">
+      <span >Logo</span>
+      <span class="example-spacer"></span>
+      <span >Title</span>
+      <span class="example-spacer"></span>
+      <span ><fa-icon [icon]="faUser"></fa-icon></span>
+    <button mat-button [matMenuTriggerFor]="menu" id = >My Account</button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>Name</button>
+        <button mat-menu-item>Other Name</button>
+    </mat-menu>
+    </mat-toolbar>
+  </p>

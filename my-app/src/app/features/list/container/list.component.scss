@@ -1,0 +1,27 @@
+.list{
+    
+    min-height: calc(100vh - 295px);
+    max-height: calc(100vh - 295px);
+    overflow-y:scroll;
+}
+.table{
+    flex: wrap;
+    border-top: 2px solid #dddddd;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.table-row{
+    background-color: #222222;
+    color: rgba(255, 255, 255, 0.753);
+}
+.table-cell{
+    
+    border-bottom: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+

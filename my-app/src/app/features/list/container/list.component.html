@@ -1,0 +1,26 @@
+
+<div class = "list">
+    <table class="mat-elevation-z8 table">
+        
+        <tr class = "table-row">
+        <th class = "table-cell"><input type="checkbox" [checked]="isAllCheckBoxChecked()" (change)="checkAllCheckBox($event)">Select All</th>
+        <th class = "table-cell" *ngFor = "let col of databaseheaders">{{col}}</th>
+        <th class = "table-cell">Action</th>
+        </tr>
+        
+        <tr  *ngFor = "let i=index; let arr of databaseItems|tableFilter: searchTitle :searchRef :searchDateFrom :searchDateTo ">
+            <td class = "table-cell"><input type="checkbox" value = "{{arr.id}}" [(ngModel)]="databaseItems[i].checked"></td>
+            <td class = "table-cell" *ngFor = "let coll of headers" >
+                {{arr[coll]}}
+            </td>
+            <td class = "table-cell">
+                <button type = "button" (click) = "clickView(arr)" mat-mini-fab matTooltip="Primary" color="primary"><fa-icon [icon]="faEye"></fa-icon></button>
+                <button type = "button" (click) ="exportOneItem(arr)" mat-mini-fab matTooltip="Primary" color="primary"><fa-icon [icon]="faFileExcel"></fa-icon></button>
+            </td>
+            
+        </tr>  
+    </table>
+    <button type = "button" (click)="exportItems()" mat-raised-button color="primary">Export</button>
+
+</div>
+

@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("./app/features/header/container/header.component.scss");
+@import url("./app/features/search/container/search.component.scss");
+@import url("./app/features/footer/container/footer.component.scss");
+@import url("./app/features/list/container/list.component.scss");
+@import url("./app/features/view/container/view.component.scss");
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

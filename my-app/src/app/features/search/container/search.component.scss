@@ -1,0 +1,32 @@
+.form-container{
+    padding: 10px;
+    margin-top: 8px;
+    background-color: #eaeaea;
+}
+#header-search{
+    font-size: 18px;
+    font-weight: 3000;
+    color: #000000;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input{
+    min-width: 150px;
+    max-width: 300px;
+    width: 100%;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+
+.form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:right;
+    margin-right: 50px;
+}
+

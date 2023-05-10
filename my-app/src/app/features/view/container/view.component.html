@@ -1,0 +1,13 @@
+<div class = "view-container">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <mat-card-title class = "view-headers" *ngFor = "let col of itemHeaders">{{col}}:<hr></mat-card-title>
+            <td class = "view-values">
+                <mat-card-title *ngFor = "let col of itemHeaders">{{item[col]}}<hr></mat-card-title>
+                
+            </td>
+            
+        </mat-card-header>
+        <button type = "button" (click)="goBack()" mat-raised-button color="primary">Back</button>
+    </mat-card>
+</div>

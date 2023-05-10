@@ -1,0 +1,16 @@
+{
+    "items":[{
+        "id": "e6f93db8-d523-11ed-afa1-0242ac120002",
+        "title" : "test",
+        "referenceNo":1,
+        "stock":2,
+        "date": "12/01/2023"
+    },
+    {
+        "id": "e6f94ad8-d523-11ed-afa1-0242ac120002",
+        "title" : "test1",
+        "referenceNo":2,
+        "stock":10,
+        "date": "22/01/2023"
+    }]
+}

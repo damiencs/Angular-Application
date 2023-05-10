@@ -1,0 +1,36 @@
+<div class = "form-container">
+    <span id = "header-search">Search Parameters</span>
+    <form [formGroup] = "forms" class="form" >
+        <mat-form-field class="input">
+          <mat-label>Title</mat-label>
+          <input [(ngModel)]="search_title" formControlName="title" matInput>
+        </mat-form-field>
+      
+        <mat-form-field class="input">
+            <mat-label>Reference No</mat-label>
+            <input [(ngModel)]="search_ref" formControlName="ref" matInput>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="input">
+            <mat-label>Date (From)</mat-label>
+            <input [(ngModel)]="search_dateFrom" formControlName="dateFrom" matInput [matDatepicker]="picker1">
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+        </mat-form-field>
+    
+        <mat-form-field appearance="fill" class="input">
+            <mat-label>Date (To)</mat-label>
+            <input [(ngModel)]="search_dateTo" formControlName="dateTo" matInput [matDatepicker]="picker2">
+            <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+            <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+        
+    </form>
+        <span class = "form-btn">
+        <button type = "button" (click)="searchFunc()" mat-raised-button color="primary"> <fa-icon [icon]="faMagnifyingGlassArrowRight"></fa-icon> Search</button>
+        <button type = "button" (click) = "clearForm()" mat-raised-button color="primary"> <fa-icon [icon]="faXmarkCircle"></fa-icon> Clear</button>
+        </span>
+    
+</div>
+
+  
