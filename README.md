@@ -1,5 +1,5 @@
 ## Description
-This repository contains a single-page Angular application that displays a list of items and allows users to view one item or export one or several items to an Excel file.
+This repository contains a single-page Angular application that displays a list of cargo manifest and allows users to view one manifest or export one or several manifests to an Excel file.
 
 ## Installation
 To get started with the project, follow these steps:  
