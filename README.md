@@ -11,7 +11,7 @@ $ git clone https://github.com/damiencs/Angular-Application.git
 * Install dependencies:  
 
 ```
-ng install
+npm install -g @angular/cli
 ```
 
 * Run the application:  
