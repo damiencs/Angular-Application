@@ -18,9 +18,16 @@ export class ListComponent {
   title: keyof ItemsModel = 'title';
   ref: keyof ItemsModel = 'referenceNo';
   stock: keyof ItemsModel = 'stock';
+  destination: keyof ItemsModel = 'destination';
   date: keyof ItemsModel = 'date';
-  headers = [this.title, this.ref, this.stock, this.date];
-  databaseheaders = ['Title', 'Reference Number', 'Stock', 'Date'];
+  headers = [this.title, this.ref, this.stock, this.destination, this.date];
+  databaseheaders = [
+    'Title',
+    'Reference Number',
+    'Stock',
+    'Destination',
+    'Date',
+  ];
   itemsToExport: ItemsModel[] = [];
   searchParam: SearchParamModel;
   searchTitle: string;

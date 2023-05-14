@@ -3,6 +3,7 @@ export interface ExportedListModel {
   title: string;
   referenceNo: number;
   stock: number;
+  destination: string;
   date: string;
   checked?: boolean;
   filtered?: boolean;
